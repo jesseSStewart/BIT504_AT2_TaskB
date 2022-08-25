@@ -12,7 +12,7 @@ import java.awt.BasicStroke;
 
 public class PongPanel extends JPanel implements ActionListener, KeyListener {
 	
-	private final static Color BACKGROUND_COLOR = Color.black;
+	private final static Color BACKGROUND_COLOR = Color.white;
 	private final static int TIMER_DELAY = 5;
 	private final static int BALL_SPEED = 3;
 	private final static int POINTS_TO_WIN = 3;
@@ -33,7 +33,7 @@ public class PongPanel extends JPanel implements ActionListener, KeyListener {
 		Graphics2D g2d = (Graphics2D) g.create();
 			Stroke dashed = new BasicStroke(2, BasicStroke.CAP_BUTT, BasicStroke.JOIN_BEVEL, 0, new float[]{9}, 0);
 		 	g2d.setStroke(dashed);
-		 	g2d.setPaint(Color.WHITE);
+		 	g2d.setPaint(Color.black);
 		 	g2d.drawLine(getWidth() / 2, 0, getWidth() / 2, getHeight());
 		 	g2d.dispose();
 	}
